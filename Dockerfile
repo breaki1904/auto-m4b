@@ -120,7 +120,7 @@ ADD runscript.sh /etc/service/bot/run
 ADD auto-m4b-tool.sh /
 
 #install actual m4b-tool
-#RUN echo "---- INSTALL M4B-TOOL ----" && \
+RUN echo "---- INSTALL M4B-TOOL ----" && \
     wget https://github.com/sandreas/m4b-tool/releases/latest/download/m4b-tool.phar -O /usr/local/bin/m4b-tool && \
     chmod +x /usr/local/bin/m4b-tool
 
